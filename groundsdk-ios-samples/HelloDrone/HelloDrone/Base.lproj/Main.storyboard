@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloDrone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-GP-BzU">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                <subviews>
+                                    <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IX-yR-G3c" userLabel="StreamView" customClass="GSStreamView">
+                                        <rect key="frame" x="0.0" y="0.0" width="852" height="344.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-iJ-qLQ">
+                                                <rect key="frame" x="93" y="10" width="666" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0b-51-L2A" userLabel="Remote">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i2-ey-Lyy" userLabel="RemoteStateTxt">
+                                                        <rect key="frame" x="59.666666666666657" y="0.0" width="58.666666666666657" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J4-Rx-WdZ" userLabel="RemoteBatteryTxt">
+                                                        <rect key="frame" x="119.33333333333334" y="0.0" width="165.00000000000003" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOl-sw-Bb6" userLabel="Drone">
+                                                        <rect key="frame" x="285.33333333333331" y="0.0" width="46.333333333333314" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-8M-3TB" userLabel="DroneStateTxt">
+                                                        <rect key="frame" x="332.66666666666669" y="0.0" width="46.333333333333314" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-uB-3vl" userLabel="DroneBatteryTxt">
+                                                        <rect key="frame" x="380" y="0.0" width="286" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Wuj-8M-3TB" firstAttribute="width" secondItem="NOl-sw-Bb6" secondAttribute="width" id="bCn-nT-eBC"/>
+                                                    <constraint firstItem="Y0b-51-L2A" firstAttribute="width" secondItem="2i2-ey-Lyy" secondAttribute="width" id="u1f-ra-Y4z"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SNP-iJ-qLQ" firstAttribute="top" secondItem="6IX-yR-G3c" secondAttribute="top" constant="10" id="0kj-Lt-546"/>
+                                            <constraint firstItem="SNP-iJ-qLQ" firstAttribute="centerX" secondItem="6IX-yR-G3c" secondAttribute="centerX" id="z6I-yF-HtD"/>
+                                        </constraints>
+                                    </glkView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YIn-Of-TrE">
+                                        <rect key="frame" x="0.0" y="344.33333333333331" width="852" height="48.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm5-2W-QHk" userLabel="StartActionBt">
+                                                <rect key="frame" x="0.0" y="0.0" width="426" height="48.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <string key="label" base64-UTF8="YES">
+CA
+</string>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Start Action"/>
+                                                <connections>
+                                                    <action selector="startActionBtAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvy-QI-fO6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-f2-5Wb" userLabel="TakeOffLandBt">
+                                                <rect key="frame" x="426" y="0.0" width="426" height="48.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <string key="label" base64-UTF8="YES">
+CA
+</string>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Land"/>
+                                                <connections>
+                                                    <action selector="takeOffLandBtAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgq-JV-41c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sm5-2W-QHk" firstAttribute="leading" secondItem="YIn-Of-TrE" secondAttribute="leading" id="5qI-rz-cRN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q4f-f2-5Wb" secondAttribute="trailing" id="7LO-Fa-zDv"/>
+                                            <constraint firstItem="sm5-2W-QHk" firstAttribute="top" secondItem="YIn-Of-TrE" secondAttribute="top" id="SEs-x6-y63"/>
+                                            <constraint firstAttribute="bottom" secondItem="sm5-2W-QHk" secondAttribute="bottom" id="YEp-cE-GKT"/>
+                                            <constraint firstItem="Q4f-f2-5Wb" firstAttribute="top" secondItem="YIn-Of-TrE" secondAttribute="top" id="k2a-jB-wbD"/>
+                                            <constraint firstAttribute="bottom" secondItem="Q4f-f2-5Wb" secondAttribute="bottom" id="vGr-uE-Cdt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YIn-Of-TrE" firstAttribute="top" secondItem="6IX-yR-G3c" secondAttribute="bottom" id="9mT-mU-x4g"/>
+                                    <constraint firstItem="YIn-Of-TrE" firstAttribute="centerX" secondItem="nTf-GP-BzU" secondAttribute="centerX" id="EKp-CW-2Ip"/>
+                                    <constraint firstAttribute="trailing" secondItem="YIn-Of-TrE" secondAttribute="trailing" id="RcQ-9a-TLR"/>
+                                    <constraint firstAttribute="bottom" secondItem="YIn-Of-TrE" secondAttribute="bottom" id="a5Q-He-kbG"/>
+                                    <constraint firstItem="6IX-yR-G3c" firstAttribute="leading" secondItem="nTf-GP-BzU" secondAttribute="leading" id="ag8-9k-1yX"/>
+                                    <constraint firstItem="YIn-Of-TrE" firstAttribute="leading" secondItem="nTf-GP-BzU" secondAttribute="leading" id="dmg-tn-KYL"/>
+                                    <constraint firstItem="6IX-yR-G3c" firstAttribute="top" secondItem="nTf-GP-BzU" secondAttribute="top" id="itb-Y2-ktN"/>
+                                    <constraint firstAttribute="trailing" secondItem="6IX-yR-G3c" secondAttribute="trailing" id="yud-Hh-d2o"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nTf-GP-BzU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5fp-RY-LKM"/>
+                            <constraint firstItem="nTf-GP-BzU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CHq-mf-zHz"/>
+                            <constraint firstItem="nTf-GP-BzU" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Xxe-qK-4Np"/>
+                            <constraint firstItem="nTf-GP-BzU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="rAy-xY-z0Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="droneBatteryTxt" destination="RGp-uB-3vl" id="PEL-oA-hwr"/>
+                        <outlet property="droneStateTxt" destination="Wuj-8M-3TB" id="N69-Ak-Yqz"/>
+                        <outlet property="remoteBatteryTxt" destination="1J4-Rx-WdZ" id="Iqj-9f-6bL"/>
+                        <outlet property="remoteStateTxt" destination="2i2-ey-Lyy" id="8p9-az-odE"/>
+                        <outlet property="startActionBt" destination="sm5-2W-QHk" id="dya-Uo-ik3"/>
+                        <outlet property="streamView" destination="6IX-yR-G3c" id="20K-zR-RVZ"/>
+                        <outlet property="takeOffLandBt" destination="Q4f-f2-5Wb" id="dHj-t2-c6i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.92857142857142" y="128.98550724637681"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
